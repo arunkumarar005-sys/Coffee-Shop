@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <style>
+    html,
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+    }
+
+    .order-btn {
+      border: 1px solid black;
+      padding: 6px 18px;
+    }
+    .order-btn:hover {
+      background-color: #a8603d;
+      color: white;
+    }
+    .nav-link,
+    .login {
+      font-size: 15px;
+      cursor: pointer;
+      color: #a8603d;
+    }
+    .navbar-brand img {
+      width: 80px;
+      height: 70px;
+    }
+
+    .footer-section {
+      background: #392d2f;
+      color: white;
+      padding: 80px 0 40px;
+    }
+
+    .footer-logo {
+      width: 160px;
+    }
+
+    .footer-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #ddd;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .social-icons i {
+      font-size: 18px;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+
+    .footer-divider {
+      border-color: rgba(255, 255, 255, 0.2);
+      margin: 40px 0 20px;
+    }
+
+    .footer-bottom {
+      font-size: 13px;
+      color: #bbb;
+    }
+
+    .about-section {
+      background: #f6f1ec;
+    }
+
+    .about-section-two {
+      background: #ffffff;
+    }
+
+    .about-img {
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+      border-radius: 15px;
+    }
+
+    .about-img:hover img {
+      transform: scale(1.08);
+    }
+
+    .about-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #4b2e2b;
+    }
+
+    .about-text {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .about-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #5d3a36;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .about-btn:hover {
+      background: #3e2421;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid naving">
+        <a class="navbar-brand ms-lg-5" href="index.html">
+          <img src="Assests/images/brownlogo.png" width="90" height="90" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Full Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Abouts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Franchise Enquiry</a>
+            </li>
+          </ul>
+
+          <a href="login.html" class="fs-4 me-lg-5 login-icon">
+            <button class="btn order-btn login">Login</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="about-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-img" data-aos="fade-right">
+              <img src="Assests/images/a-1.jpg" alt="about" />
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="about-title">Fueled by a Dream</h2>
+            <p class="about-text">
+              Our coffee shop began with a simple dream — to create a place
+              where people can gather, share stories, and enjoy great coffee.
+              What started as a small idea has grown into a welcoming space
+              filled with warmth and community.
+            </p>
+
+            <a href="#" class="about-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section-two py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2">
+            <div class="about-img" data-aos="fade-left">
+              <img src="Assests/images/a-2.jpeg" alt="about" />
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+            <h2 class="about-title">Brewing Community</h2>
+            <p class="about-text">
+              We believe coffee connects people. Our space is designed to bring
+              together friends, families, and dreamers. Every cup we serve is
+              made with passion and the hope of creating memorable moments.
+            </p>
+
+            <a href="#" class="about-btn">Our Mission</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <img src="Assests/images/whitelogo.png" class="footer-logo mb-3" />
+
+            <p class="footer-text">
+              Once a neighborhood bar, now a nonprofit coffeehouse brewing hope
+              and opportunity in the Buckeye community.
+            </p>
+
+            <div class="social-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-title">Links</h5>
+
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">The Drip</a></li>
+              <li><a href="#">Host Event</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-title">Order</h5>
+
+            <ul class="footer-links">
+              <li><a href="#">Full Menu</a></li>
+              <li><a href="#">Tavern Merch</a></li>
+              <li><a href="#">Pickup Order</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-title">Contact</h5>
+
+            <p class="footer-text">
+              123 ABC Street<br />
+              Tamilnadu, India
+            </p>
+
+            <p class="footer-text">Email: hello@taverncoffee.com</p>
+
+            <button class="btn btn-outline-light mt-2">Order Online</button>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="text-center footer-bottom">
+          © 2026 Tavern Coffee House. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
